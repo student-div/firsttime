@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <header> <h2 style="color: blue;">Contact details </h2></header>
+   <main>
+    <form action="2.html" type="get" aria-labelledby="contact-form">
+        <fieldset>
+            <legend id="contact-form">Contact Form</legend>            
+            
+       
+      <label for="first name"><b>Type your First name here:</b></label> 
+      <input type="text" placeholder="Your first name" required aria-required="true">
+     
+      <label for="last name"><b>Type your Last name here:</b></label>
+      <input type="text" placeholder="Your last name" required aria-required="true"> <br><br>
+          
+
+       
+      <label for="contact no."><b>Contact no.</b></label>
+      <input type="tel" id="phone" name="phone" placeholder="contact no." required aria-required="true">
+     
+      <br><br>
+     
+      <label for="email"><b>Email</b></label>
+      <input type="email" id="email" name="email" placeholder="Your email" required aria-required="true"> 
+    
+     
+      <label for=""><b>password</b></label>
+      <input type="password" >
+    
+      <br><br>
+   
+      <P ><b>Gender</b></P>
+      <input name ="char" type="radio">
+      <label for="female">female</label><br>
+      <input name ="char"  type="radio">
+      <label for="male">male</label>
+      
+      <br><br> 
+      
+      <label for="country" style="font-weight: bold;">Country:</label>
+      <select id="country" name="country" >
+          <option value="">Select your country</option>
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+      </select><br><br>
+     
+      <label for="message"><b>Message:</b></label>
+      <textarea id="message" name="message" rows="4" ></textarea><br><br>
+      <div >
+      <button type="reset"  role="button" value="reset" onmouseover="this.style.backgroundColor='green';" 
+      onmouseout="this.style.backgroundColor='blue';" 
+      onclick="this.style.backgroundColor='red';"><b>reset</b></button>
+    </div>
+
+     <section>
+      <button type="submit" value="submitted" onmouseover="this.style.backgroundColor='green';" 
+      onmouseout="this.style.backgroundColor='blue';" 
+      onclick="this.style.backgroundColor='red';"><b>Submit</b></button></section>
+     </fieldset>
+
+    </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company</p>
+    </footer>
+</body>
+</html>
