@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <label for="num1">Number 1:</label>
+    <input type="text" id="num1">
+    <br>
+    <label for="num2">Number 2:</label>
+    <input type="text" id="num2">
+    <br>
+    <label for="operation">Operation:</label>
+    <select id="operation">
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+    </select>
+    <br>
+    <button onclick="calculate()">Calculate</button>
+    <h2 id="result"></h2>
+    
+
+    <script>
+        function calculate() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var operation = document.getElementById('operation').value;
+            var result;
+
+            if (operation === 'add') {
+                result = num1 + num2;
+            } else if (operation === 'subtract') {
+                result = num1 - num2;
+            } else if (operation === 'multiply') {
+                result = num1 * num2;
+            } else if (operation === 'divide') {
+                if (num2 !== 0) {
+                    result = num1 / num2;
+                } else {
+                    result = 'Cannot divide by zero';
+                }
+            } else {
+                result = 'Invalid operation';
+            }
+
+            document.getElementById('result').textContent = 'Result: ' + result;
+        }
+        </script>
+    </body>
+</html>
